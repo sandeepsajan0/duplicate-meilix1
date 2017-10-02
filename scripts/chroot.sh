@@ -84,7 +84,7 @@ apt-get -qq -y --purge install lxrandr
 apt-get -qq -y --purge install flashplugin-installer google-talkplugin pidgin qpdfview libqtwebkit4
 
 # Install local Skype 32Bit package
-dpkg -i skype-ubuntu_4.1.0.20-1_i386.deb
+dpkg -i skype-ubuntu-lucid_4.3.0.37-1_i386.deb
 
 # Install graphic
 apt-get -qq -y --purge install gimp inkscape
