@@ -197,12 +197,7 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="C-A-Down">
-      <action name="GoToDesktop">
-        <to>down</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
+    
     <keybind key="S-A-Left">
       <action name="SendToDesktop">
         <to>left</to>
