@@ -27,14 +27,14 @@ for i in $response; do
             if [ $published_month -lt $current_month ]; then
                 let "delete=1"
             else
-                if [ $((current_day-$published_day)) -gt 10 ]; then
+                if [ $((current_day-$published_day)) -gt 5 ]; then
                     let "delete=1"
                 fi
             fi
         fi
     else # We get the id of the release as $i`s value here
         if [ $delete -eq 1 ]; then
-            curl -X DELETE -H "Authorization: token $KEY" https://api.github.com/repos/fossasia/meilix/releases/$i
+            curl -X DELETE -H "Authorization: token $KEY" https://api.github.com/repos/sandeepsajan0/duplicate-meilix1/releases/$i
             let "delete=0"
         fi
     fi
