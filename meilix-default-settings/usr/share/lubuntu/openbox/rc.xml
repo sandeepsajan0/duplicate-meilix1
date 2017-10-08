@@ -134,16 +134,16 @@
   </desktops>
   <resize>
     <drawContents>yes</drawContents>
-    <popupShow>Nonpixel</popupShow>
+    <popupShow>Never</popupShow>
     <!-- 'Always', 'Never', or 'Nonpixel' (xterms and such) -->
     <popupPosition>Center</popupPosition>
     <!-- 'Center', 'Top', or 'Fixed' -->
     <popupFixedPosition>
       <!-- these are used if popupPosition is set to 'Fixed' -->
-      <x>10</x>
+      <x>0</x>
       <!-- positive number for distance from left edge, negative number for
          distance from right edge, or 'Center' -->
-      <y>10</y>
+      <y>0</y>
       <!-- positive number for distance from top edge, negative number for
          distance from bottom edge, or 'Center' -->
     </popupFixedPosition>
@@ -292,6 +292,17 @@
         </finalactions>
       </action>
     </keybind>
+    <keybind key="C-A-D">
+      <action name="MinimizeWindow">
+        <panels>yes</panels>
+        <desktop>yes</desktop>
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+      </action>
+    </keybind>      
     <!-- Keybindings for window switching with the arrow keys -->
     <keybind key="W-S-Right">
       <action name="DirectionalCycleWindows">
