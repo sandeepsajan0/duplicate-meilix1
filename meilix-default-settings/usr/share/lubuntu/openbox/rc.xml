@@ -325,6 +325,18 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
+          
+    <!-- Keybindings for running applications.
+   Commented out as application shortcuts should be handled by lxqt-globalkeys in LXQt sessions.
+  <keybind key="W-q">
+    <action name="Execute">
+      <startupnotify>
+        <enabled>true</enabled>
+        <name>Qupzilla</name>
+      </startupnotify>
+      <command>qupzilla</command>
+    </action>
+  </keybind>       
         <keybind key="W-s">
       <action name="Execute">
         <startupnotify>
@@ -387,7 +399,7 @@
         </startupnotify>
         <command>oblogout</command>
       </action>
-    </keybind>
+    </keybind>-->
     <keybind key="Print">
       <action name="Execute">
         <startupnotify>
