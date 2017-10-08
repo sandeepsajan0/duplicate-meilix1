@@ -41,6 +41,8 @@ sudo apt-get -qq install $devtools -y --no-install-recommends
 sudo apt-get -qq install dpkg-dev debhelper fakeroot
 sudo apt-get -qq install devscripts
 
+sudo apt-get remove notification-daemon
+
 #Adding Mew to the Meilix
 chmod +x ./scripts/mew.sh
 ./scripts/mew.sh
