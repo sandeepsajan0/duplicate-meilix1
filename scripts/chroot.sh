@@ -10,7 +10,7 @@ export LANG=C
 export LIVE_BOOT_SCRIPTS="casper lupin-casper"
 
 
-
+sudo apt-get purge lxqt-notificationd
 
 # To allow a few apps using upstart to install correctly. JM 2011-02-21
 dpkg-divert --local --rename --add /sbin/initctl
