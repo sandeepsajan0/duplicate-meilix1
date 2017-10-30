@@ -136,6 +136,12 @@ update-initramfs -u
 dpkg -i --force-overwrite systemlock_0.1-1_all.deb
 apt-get install -f
 apt-get -qq -y remove dconf-tools
+#added by me for Notification   ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+dbus-send --type=method_call\
+   --dest=org.freedesktop.Notifications\
+   /org/freedesktop/Notifications\
+   org.freedesktop.Notifications.CloseNotification uint32:0
+
 
 # Clean up the chroot before
 perl -i -nle 'print unless /^Package: language-(pack|support)/ .. /^$/;' /var/lib/apt/extended_states
